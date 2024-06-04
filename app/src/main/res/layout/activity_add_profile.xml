@@ -7,12 +7,14 @@
     app:cardElevation="15dp"
     app:cardCornerRadius="15dp"
     android:layout_margin="30dp"
+    app:cardBackgroundColor="#9ED6CF"
+    app:cardUseCompatPadding="false"
     tools:context=".AddProfileActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="10dp">
+       >
 
         <EditText
             android:id="@+id/profileNameEt"
@@ -21,48 +23,61 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="144dp"
             android:layout_marginEnd="10dp"
+            android:background="#B4E180"
+            android:fontFamily="@font/aladin"
             android:hint="Enter Profile Name"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/profileEmailEt"
             android:layout_width="0dp"
-            android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="#B9E486"
+            android:fontFamily="@font/aladin"
             android:hint="Enter Profile Email"
             app:layout_constraintEnd_toEndOf="@+id/profileNameEt"
             app:layout_constraintStart_toStartOf="@+id/profileNameEt"
             app:layout_constraintTop_toBottomOf="@+id/profileNameEt" />
+
         <EditText
             android:id="@+id/profileDOBEt"
             android:layout_width="0dp"
-            android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="#B8E186"
+            android:fontFamily="@font/aladin"
             android:hint="Enter Profile Date of Birth"
             app:layout_constraintEnd_toEndOf="@+id/profileEmailEt"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/profileEmailEt"
             app:layout_constraintTop_toBottomOf="@+id/profileEmailEt" />
 
         <EditText
             android:id="@+id/profileDistrictEt"
             android:layout_width="0dp"
-            android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="#B5DC84"
+            android:fontFamily="@font/aladin"
             android:hint="Enter Profile District"
             app:layout_constraintEnd_toEndOf="@+id/profileDOBEt"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/profileDOBEt"
             app:layout_constraintTop_toBottomOf="@+id/profileDOBEt" />
 
         <EditText
             android:id="@+id/profilemobileEt"
             android:layout_width="0dp"
-            android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="#B7E186"
+            android:fontFamily="@font/aladin"
             android:hint="Enter Profile Mobile"
             app:layout_constraintEnd_toEndOf="@+id/profileDistrictEt"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/profileDistrictEt"
             app:layout_constraintTop_toBottomOf="@+id/profileDistrictEt" />
 
@@ -70,10 +85,13 @@
             android:id="@+id/addBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="52dp"
+            android:layout_marginTop="48dp"
+            android:backgroundTint="#2E9832"
+            android:fontFamily="@font/aldrich"
             android:text="ADD PROFILE"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@+id/profilemobileEt"
-            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintHorizontal_bias="0.493"
             app:layout_constraintStart_toStartOf="@+id/profilemobileEt"
             app:layout_constraintTop_toBottomOf="@+id/profilemobileEt" />
 
